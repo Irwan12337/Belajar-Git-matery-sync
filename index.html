@@ -24,6 +24,8 @@
     <div> untuk melihat file branch : git branch, dan untuk menambahkan branch baru : git branch "diikuti nama file</div>
     <div> untuk berpindah folder branch : git checkout "diikuti nama file", untuk kembali ke master : git checkout master</div>
     <div>untuk mengahpus file branch : git branch -d "nama file"</div>
+    <div>merge branch : git merge "nama file branch" sebelum merge pindah dahulu ke checkout master</div>
+    <div>berpindah dan create brach dengan cepat : git checkout -b "nama file branch"</div>
     <footer> belajar git </footer>
 
     <h2>Git tag</h2>
@@ -31,5 +33,11 @@
     <div>untuk cek ketik : git tag</div>
     <div>untuk mengupload : git push origin master --tags</div>
     <div>untuk menghapus : git tag -d "nama file"</div>
+
+    <h2>Git Lanjutan</h2>
+    <div>cara mengembalikan source code ke working directory (melepas staging) : git restore -S "nama file" </div>
+    <div>mengembalikan source code yang telah di commit ke working directory kembali : git reset --hard "kemudian masukkan nomor hash, nomor yang didapat dari git log"</div>
+    <div>mengembalikan source code ke commit nomor 3 dari 5 commit yang telah dibuat tanpa menghapus commit 4 & 5 ketik : git revert "nomor hash yang di show di log"</div>
+    <div>clone source code dari github : git clone "copy code dari repository git"</div>
 </body>
 </html>
