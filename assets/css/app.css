@@ -1,4 +1,24 @@
-h1 {
+h1, h2 {
     font-style: oblique;
-    color: rebeccapurple;   
+    color: black; 
+    text-align: start; 
+    text-decoration:
 }
+p {
+    text-align: justify;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    
+}
+
+/* # digunakan untuk selector ID
+   . digunakan untuk selector class */
+#kanina{
+    color: blue;
+}
+
+.mark {
+    background-color: greenyellow;
+}
+    
