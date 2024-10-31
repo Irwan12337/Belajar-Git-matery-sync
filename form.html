@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulir isi</h1>
-<form action="/daftar" method="get">
+    <h1>Formulir Pembelian</h1>
+<form action="/order" method="get">
     <table>        
                 <tr>
                     <td><label for="email">Email</label></td>
@@ -25,9 +25,39 @@
                 <tr>
                 <td><label for="color">Warna</label></td>
                 <td><input type="color" placeholder="pilih warna" id="color"></td>
-                </tr>
+                
     </table>
-    <button>submit</button>
+   
+    <div> 
+        <p>Mau order apa?</p>
+        <p><input type="radio" name="order" id="order" value="Kaos">Kaos</p>
+        <p><input type="radio" name="order" id="order" value="Kemeja">Kemeja</p>
+        <p><input type="radio" name="order" id="order" value="Celana">Celana</p>
+      
+    </div>
+    <div>
+        <label for="size">Silahkan pilih Sizenya</label>
+        <select name="size" id="size">
+            <option value="size S">size S</option>
+            <option value="size M">size M</option>
+            <option value="size L">size L</option>
+            <option value="size XL">size XL</option>
+        </select>
+        <p><input type="checkbox" name="konfirmasi" id="" value="Setuju">Setuju syarat ketentuan</p>
+        <button>order lavente</button>
+    </div>
+    <div>
+        <p>catatan</p>
+        <textarea name="catatan" id="catatan" cols="30" rows="7"></textarea>
+    </div>
 </form>
+
+<form action="valid">
+    <p>Validitas</p>
+    <input type="text" name="validasi" id="" required minlength="3" maxlength="8">
+    <input type="number" name="validasi" id="" required min="1" max="10">
+<button>submit</button>
+</form>
+
 </body>
 </html>
