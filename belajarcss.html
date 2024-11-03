@@ -6,21 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        section p {
-            color: chocolate;
-            font-size: medium;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          
-        
-
+        section > p {
+            color: black;
+            background-color: greenyellow;
         }
-        .mummy p{
-            color: darkcyan;
-            
+        /* untuk mengubah text yang ditunjuk menjadi pointer dengan kriteria p dibawah section langsung */
+        section > p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        section:nth-of-type(2n) {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* untuk mengubah bentuh tiap awalan huruf pada h3 */
+        section h3::first-letter {
+            font-size: xx-large;
+        }
+        /* Untuk menambahkan konten / simbol di tiap akhir p (paragraf) */
+         p::after {
+            content: ".";
+         }
+
+        button:hover {
+            background-color: red;
+        }
+        
+        input[type="text"]{
+            color: blue;
+        }
+        input[type="password"] {
+            color: greenyellow;
         }
     </style>
 </head>
 <body>
+    <label for="cari">Search materi</label>
+    <input type="text" name="cari" id="cari">
+    <input type="password" name="" id="">
+
     <h1>Belajar CSS</h1>
     <p>Cascading Style Sheets ( CSS ) adalah <I class="mark">bahasa lembar gaya</I> yang digunakan untuk menentukan presentasi dan gaya dokumen yang ditulis dalam bahasa markup seperti HTML atau XML (termasuk dialek XML seperti SVG , MathML atau XHTML ). CSS adalah teknologi dasar World Wide Web , bersama dengan HTML dan JavaScript </p>
 
@@ -31,19 +55,23 @@
     <br>
     <hr>
 
+
     <section>
         <h3>dolor sit amet</h3>
-        <p class="penulis">penulis kampret</p>
+        <p>penulis kampret</p>
     </section>
-    <section>
-        <h3>kampret ayam</h3>
-        <p>penulis wombat</p>
+    <section class="chappy">
+        <h3>nth:of type</h3>
+        <p>section:nth-of-type(2n) fungsinya ialah merubah/styling suatu section secara spesifik semisal section nomor (2) untuk section kelipatan 2 tinggal tambah n</p>
+        <div>
+            <p>Fungsi > pada style agar tidak merubah bentuk isi dari paragraf ini karena didalam div, dan hanya merubah Paragraf didalam section diluar div</p>
+        </div>
     </section>
     <section>
         <h3>kemana kyta</h3>
         <p>penulis ktc</p>
     </section>
-    <section class="mummy">
+    <section>
         <h3>the mummy has revealed to get vegeance</h3>
         <p>penulis ank su namun</p>
     </section>

@@ -1,0 +1,24 @@
+div {
+    width: 500px;
+    border: 1px solid black;  */
+    padding: 10px; */
+    margin: 20px;
+}
+
+div {
+    border-style: solid;
+    border-color: bisque;
+  
+}
+
+div {
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+div {
+    text-align: justify;
+}
+
