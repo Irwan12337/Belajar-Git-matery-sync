@@ -5,18 +5,32 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
     flex-direction: row ;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
+    /* align-content: start; */
 
 } 
 
 #container div {
     width: 200px;
     height: 200px;
+    flex-basis: 300px;
 }
+
+div:nth-of-type(3) { 
+    flex-shrink: 2;
+}
+/* div:nth-of-type(1) { 
+flex-shrink: 2;
+} */
+/* div:nth-of-type(1) {
+    align-self: flex-end 
+} */

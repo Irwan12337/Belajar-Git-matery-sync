@@ -1,0 +1,19 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 400px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: bisque;
+    flex: inherit;
+
+}
+
+main .content {
+    background-color: azure;
+    flex: inherit;
+
+}
