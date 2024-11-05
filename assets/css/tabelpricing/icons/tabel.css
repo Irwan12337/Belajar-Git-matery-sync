@@ -63,10 +63,10 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 15px 25px;
-    width: 100%;
-    max-width: 960px;
+    width: 900%;
+    max-width: 950px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     text-transform: uppercase;   
 }
@@ -118,11 +118,47 @@ body {
 }
 
 .pricing-button {
-    border: 2px #9dd1ff;
+    border: 1px solid #9dd1ff;
     border-radius: 10px;
     color: #348efe;
     display: inline-block;
     padding: 15px 35px;
     text-decoration: none;
-    margin: 20px 0;
+    margin: 25px 0;
+}
+
+.pricing-button:hover,
+.pricing-button :focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured{
+    border: 1px solid #9dd1ff;
+    background-color: #529ffa;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #9dd1ff;
+}
+
+.pricing-img{
+    width: 170px;
+}
+
+@media  (min-width: 900px){
+    .panel {
+        flex-direction: row;
+    }   
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 0;
+    }
 }
