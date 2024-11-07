@@ -66,7 +66,7 @@ body {
     width: 900%;
     max-width: 950px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     text-transform: uppercase;   
 }
@@ -160,5 +160,9 @@ body {
         border-bottom: none;
         border-right: 1px solid #e1f1ff;
         padding: 25px 0;
+    }
+    .pricing-plan:last-child {
+
+        border-right: none;
     }
 }
