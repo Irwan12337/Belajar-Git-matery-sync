@@ -1,0 +1,54 @@
+body {
+    background: #c2ded1;
+    font-family: 'nunito', sans-serif;
+}
+
+#navbar {
+    font-size: 1.5rem;
+    font-weight: 100px;
+    background-color: #c2ded1;
+}
+
+#navbar .nav-link {
+    color: white;
+}
+
+#navbar .nav-link:hover{
+    color: #354259;
+}
+
+#navbar .navbar-brand {
+    color: #354259;
+    font-size: 1.5rem;
+}
+
+#title-head {
+    font-weight: 100px;
+    font-size: 4rem;
+}
+
+.blurb h2 {
+    font-size: 2.5rem;
+    font-weight: 100px;
+    color: #354259;
+}
+
+.blurb p {
+    font-size: 1.125rem;
+    color: #3f4e4f;
+    font-weight: 100;
+    line-height: 2;
+    text-align: justify;
+}
+
+.content {
+    margin-top: 100;
+    margin-bottom: 100;
+}
+
+@media (max-width: 1200px) {
+    #title-head h1 {
+        font-size: 3rem;
+        font-weight: 100px;
+    }
+}
